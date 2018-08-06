@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'MVVM-Sample' do
+    use_frameworks!
+
+    # MVVM-Rx
+    pod 'RxSwift', '~> 4.0'
+    pod 'RxCocoa', '~> 4.0'
+    
+    target 'MVVM-SampleTests' do
+        inherit! :search_paths
+    end
+end
